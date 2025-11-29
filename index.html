@@ -3,52 +3,234 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Início - Raissa Batista Bayer</title>
+    <title>Portfólio - Raissa Batista Bayer</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <header>
-      <div>
-        <div class="logo">Raissa Bayer</div>
-        <div class="title">Programadora Web</div>
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand__mark">RB</div>
+        <div>
+          <div class="brand__name">Raissa Batista Bayer</div>
+          <div class="brand__role">Programadora Web Full Stack</div>
+        </div>
       </div>
-      <nav>
-        <a href="/index.html" class="nav-link">Início</a>
-        <a href="/sobre.html" class="nav-link">Sobre Mim</a>
-        <a href="/contato.html" class="nav-link">Contato</a>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Início</a>
+        <a class="nav__link" href="sobre.html">Sobre</a>
+        <a class="nav__link" href="curriculo.html">Currículo</a>
+        <a class="nav__link" href="contato.html">Contato</a>
+        <a class="nav__link" href="ajuda.html">Ajuda</a>
       </nav>
-      <div></div>
     </header>
-    <div class="container">
-      <section>
-        <h1>Raissa Bayer, Programadora</h1>
-        <p>
-          Sou um programador web full stack apaixonado por desenvolvimento de
-          software e tecnologia. Tenho experiência com várias tecnologias web
-          modernas, incluindo HTML, CSS, JavaScript, Ruby on Rails e PostgreSQL.
-        </p>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <p class="eyebrow">Landing page dinâmica</p>
+          <h1>
+            Programadora web que cria experiências digitais modernas e eficientes
+          </h1>
+          <p class="lede">
+            Sou apaixonada por tecnologia, usabilidade e soluções que respeitam
+            a experiência das pessoas. Aqui você encontra meus destaques, os
+            projetos das Atividades de Checkout de Presença e um espaço pronto
+            para receber novas fotos e estudos.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="contato.html">Vamos conversar</a>
+            <a class="btn btn--ghost" href="curriculo.html">Ver currículo</a>
+          </div>
+          <div class="badges">
+            <span class="badge">HTML/CSS</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Ruby on Rails</span>
+            <span class="badge">Next.js</span>
+          </div>
+        </div>
+        <div class="hero__media">
+          <div class="photo-card">
+            <div class="photo-card__frame">Espaço para foto em destaque</div>
+            <p class="caption">
+              Imagem principal do portfólio. Substitua por uma foto marcante
+              quando quiser.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <a href="/sobre.html" class="call-to-action">Saiba Mais</a>
-        <a href="/contato.html" class="call-to-action">Entre em Contato</a>
+      <section class="section">
+        <div class="section__header">
+          <p class="eyebrow">Destaques</p>
+          <h2 class="section__title">O que me move</h2>
+          <p class="section__subtitle">
+            Experiência full stack, foco em usabilidade e entregas iterativas
+            feitas nas atividades avaliativas da disciplina.
+          </p>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Checkout de Presença</h3>
+            <p>
+              Projetos completos desenvolvidos para as atividades da disciplina,
+              com foco em boas práticas e heurísticas de usabilidade.
+            </p>
+            <a class="card__link" href="#projetos">Ver projetos</a>
+          </article>
+          <article class="card">
+            <h3>Experiência em time</h3>
+            <p>
+              Trabalho colaborativo em squads ágeis, atuando de ponta a ponta do
+              front-end ao back-end.
+            </p>
+            <span class="pill">Scrum</span>
+          </article>
+          <article class="card">
+            <h3>Design centrado no usuário</h3>
+            <p>
+              Páginas pensadas para serem responsivas, acessíveis e com
+              identidade visual pronta para receber novas fotos e cases.
+            </p>
+            <span class="pill">UI/UX</span>
+          </article>
+        </div>
       </section>
 
-      <section class="skills">
-        <h2>Habilidades</h2>
-        <ul>
-          <li>HTML, CSS e JavaScript</li>
-          <li>React e Next.js</li>
-          <li>Ruby on Rails</li>
-          <li>PostgreSQL, MongoDB e Redis</li>
-          <li>Versionamento de código com Git</li>
-          <li>Experiência em desenvolvimento ágil (Scrum)</li>
-        </ul>
+      <section id="projetos" class="section">
+        <div class="section__header">
+          <p class="eyebrow">Atividades de Checkout de Presença</p>
+          <h2 class="section__title">Projetos recentes</h2>
+          <p class="section__subtitle">
+            Cards prontos para receber as fotos dos projetos. Basta substituir as
+            áreas destacadas pela imagem de cada entrega.
+          </p>
+        </div>
+        <div class="media-grid">
+          <figure class="media-card">
+            <div class="media-card__placeholder">Foto do Projeto 1</div>
+            <figcaption>
+              <strong>Interface responsiva</strong>
+              <span>Landing page otimizada para dispositivos móveis.</span>
+            </figcaption>
+          </figure>
+          <figure class="media-card">
+            <div class="media-card__placeholder">Foto do Projeto 2</div>
+            <figcaption>
+              <strong>API &amp; Front-end</strong>
+              <span>Integração entre serviços e UI reativa.</span>
+            </figcaption>
+          </figure>
+          <figure class="media-card">
+            <div class="media-card__placeholder">Foto do Projeto 3</div>
+            <figcaption>
+              <strong>Automação de testes</strong>
+              <span>Fluxos validados com foco em qualidade contínua.</span>
+            </figcaption>
+          </figure>
+        </div>
       </section>
-    </div>
-    <footer>
-      <p>Contato apenas email.</p>
+
+      <section class="section section--alt">
+        <div class="section__header">
+          <p class="eyebrow">Sobre</p>
+          <h2 class="section__title">Quem sou</h2>
+          <p class="section__subtitle">
+            História, interesses e habilidades detalhados na página dedicada.
+          </p>
+        </div>
+        <div class="split">
+          <div>
+            <h3>Curiosa e criativa</h3>
+            <p>
+              Minha trajetória é construída em projetos desafiadores, na busca
+              constante por conhecimento e em soluções que respeitam cada pessoa
+              usuária.
+            </p>
+            <a class="btn btn--ghost" href="sobre.html">Ler biografia completa</a>
+          </div>
+          <div class="photo-card photo-card--mini">
+            <div class="photo-card__frame">Foto para seção Sobre</div>
+            <p class="caption">Espaço reservado para retrato ou foto do time.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__header">
+          <p class="eyebrow">Currículo</p>
+          <h2 class="section__title">Realizações acadêmicas e profissionais</h2>
+          <p class="section__subtitle">
+            Um resumo rápido das conquistas. A versão completa está na página de
+            currículo.
+          </p>
+        </div>
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div>
+              <h4>Graduação em Ciência da Computação</h4>
+              <p>Fundamentos sólidos em algoritmos, dados e engenharia de software.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div>
+              <h4>Experiência Full Stack</h4>
+              <p>Projetos web completos, incluindo camadas de banco de dados e UI.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div>
+              <h4>Foco em usabilidade</h4>
+              <p>Aplicação de heurísticas para entregar interfaces intuitivas.</p>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn--primary" href="curriculo.html">Ver currículo completo</a>
+      </section>
+
+      <section class="section section--alt">
+        <div class="section__header">
+          <p class="eyebrow">Contato</p>
+          <h2 class="section__title">Vamos trabalhar juntos</h2>
+          <p class="section__subtitle">
+            Formulário de contato disponível para novas oportunidades e
+            colaborações.
+          </p>
+        </div>
+        <div class="split">
+          <div>
+            <h3>Disponível para projetos</h3>
+            <p>Envie uma mensagem com o assunto e sua ideia. Responderei em breve.</p>
+            <a class="btn btn--ghost" href="contato.html">Abrir formulário</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card__item">
+              <span class="contact-card__label">Email</span>
+              <a href="mailto:raissa.b.bayer@gmail.com">raissa.b.bayer@gmail.com</a>
+            </div>
+            <div class="contact-card__item">
+              <span class="contact-card__label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/raissa-bayer" target="_blank" rel="noopener">linkedin.com/in/raissa-bayer</a>
+            </div>
+            <div class="contact-card__item">
+              <span class="contact-card__label">GitHub</span>
+              <a href="https://github.com/RaissaBayer" target="_blank" rel="noopener">github.com/RaissaBayer</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div>
+          <div class="brand__name">Raissa Batista Bayer</div>
+          <p>Design responsivo, pronto para receber novas fotos e projetos.</p>
+        </div>
+        <a class="footer__link" href="ajuda.html">Heurísticas e diretrizes</a>
+      </div>
     </footer>
   </body>
 </html>
