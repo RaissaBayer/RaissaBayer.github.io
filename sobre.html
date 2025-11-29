@@ -3,51 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre - Raissa Bayer</title>
+    <title>Sobre - Raissa Batista Bayer</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <div class="logo">Raissa Bayer</div>
-        <div class="title">Programadora</div>
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand__mark">RB</div>
+        <div>
+          <div class="brand__name">Raissa Batista Bayer</div>
+          <div class="brand__role">Programadora Web</div>
+        </div>
       </div>
-      <nav>
-        <a href="/index.html" class="nav-link">Início</a>
-        <a href="/sobre.html" class="nav-link">Sobre Mim</a>
-        <a href="/contato.html" class="nav-link">Contato</a>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Início</a>
+        <a class="nav__link" href="sobre.html">Sobre</a>
+        <a class="nav__link" href="curriculo.html">Currículo</a>
+        <a class="nav__link" href="contato.html">Contato</a>
+        <a class="nav__link" href="ajuda.html">Ajuda</a>
       </nav>
-      <div></div>
     </header>
-    <div class="container">
-      <section>
-        <h1>Sobre Mim</h1>
-        <h2>Biografia</h2>
-        <p>
-          Sou apaixonado por tecnologia e programação desde cedo. Ao longo da
-          minha trajetória, dediquei-me ao desenvolvimento web e descobri minha
-          paixão por criar soluções digitais que impactam positivamente a vida
-          das pessoas.
-        </p>
-        <h2>Experiência Profissional</h2>
-        <p>
-          Tenho mais de 5 anos de experiência como programador web full stack.
-          Durante minha carreira, trabalhei em diversos projetos desafiadores,
-          utilizando tecnologias como HTML, CSS, JavaScript, Ruby on Rails e
-          bancos de dados como PostgreSQL e MongoDB. Minha habilidade em
-          desenvolvimento ágil, especialmente com metodologias como Scrum,
-          permitiu-me entregar produtos de alta qualidade de forma eficiente.
-        </p>
-        <h2>Formação Acadêmica</h2>
-        <p>
-          Sou graduado em Ciência da Computação pela Universidade XYZ, onde
-          desenvolvi uma base sólida em algoritmos, estruturas de dados e
-          engenharia de software. Durante meu período acadêmico, participei
-          ativamente de projetos de pesquisa e desenvolvimento, explorando novas
-          tecnologias e frameworks que me prepararam para os desafios do mercado
-          de trabalho.
-        </p>
+
+    <main class="page">
+      <section class="section">
+        <div class="section__header">
+          <p class="eyebrow">Sobre</p>
+          <h1 class="section__title">História, interesses e habilidades</h1>
+          <p class="section__subtitle">
+            Minha trajetória mescla curiosidade, aprendizado constante e projetos
+            que unem tecnologia e experiência do usuário.
+          </p>
+        </div>
+        <div class="split">
+          <div>
+            <h2>Minha história</h2>
+            <p>
+              Sou apaixonada por tecnologia desde cedo. A curiosidade por entender
+              como sistemas funcionam levou-me à programação e à construção de
+              produtos digitais que resolvem problemas reais.
+            </p>
+            <p>
+              Nas Atividades de Checkout de Presença explorei diferentes
+              abordagens de design e desenvolvimento, sempre com foco em entregar
+              interfaces intuitivas e consistentes.
+            </p>
+          </div>
+          <div class="photo-card">
+            <div class="photo-card__frame">Espaço para foto pessoal</div>
+            <p class="caption">Substitua por uma imagem que represente você.</p>
+          </div>
+        </div>
       </section>
-    </div>
+
+      <section class="section section--alt">
+        <div class="grid">
+          <article class="card">
+            <h3>Interesses</h3>
+            <p>
+              Usabilidade, acessibilidade, design de interação e sistemas que
+              facilitem a vida das pessoas.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Habilidades</h3>
+            <p>
+              Desenvolvimento front-end e back-end, integração de APIs, testes e
+              automação com foco em qualidade.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Experiência relevante</h3>
+            <p>
+              Participação em squads ágeis, atuando em planejamento, implementação
+              e monitoramento de funcionalidades.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div>
+          <div class="brand__name">Raissa Batista Bayer</div>
+          <p>Conteúdo dedicado à minha jornada profissional.</p>
+        </div>
+        <a class="footer__link" href="ajuda.html">Heurísticas e diretrizes</a>
+      </div>
+    </footer>
   </body>
 </html>
