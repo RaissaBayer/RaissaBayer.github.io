@@ -3,42 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contato - Raissa Bayer</title>
+    <title>Contato - Raissa Batista Bayer</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <header>
-      <div>
-        <div class="logo">Raissa Bayer</div>
-        <div class="title">Programadora</div>
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand__mark">RB</div>
+        <div>
+          <div class="brand__name">Raissa Batista Bayer</div>
+          <div class="brand__role">Programadora Web</div>
+        </div>
       </div>
-      <nav>
-        <a href="/index.html" class="nav-link">Início</a>
-        <a href="/sobre.html" class="nav-link">Sobre Mim</a>
-        <a href="/contato.html" class="nav-link">Contato</a>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Início</a>
+        <a class="nav__link" href="sobre.html">Sobre</a>
+        <a class="nav__link" href="curriculo.html">Currículo</a>
+        <a class="nav__link" href="contato.html">Contato</a>
+        <a class="nav__link" href="ajuda.html">Ajuda</a>
       </nav>
-      <div></div>
     </header>
-    <div class="container">
-      <section>
-        <h1>Entre em Contato</h1>
-        <h2>Redes Sociais</h2>
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/raissa-bayer" target="_blank">LinkedIn</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/raissa.bayer" target="_blank">Instagram</a>
-          </li>
-        </ul>
-        <h2>GitHub</h2>
-        <p>
-          <a href="https://github.com/RaissaBayer" target="_blank">github.com/RaissaBayer</a>
-        </p>
-        <h2>Email</h2>
-        <p><a href="mailto:johndoe@example.com">raissa.b.bayer@gmail.com</a></p>
+
+    <main class="page">
+      <section class="section">
+        <div class="section__header">
+          <p class="eyebrow">Contato</p>
+          <h1 class="section__title">Fale comigo</h1>
+          <p class="section__subtitle">
+            Envie sua mensagem para parcerias, oportunidades ou dúvidas sobre os
+            projetos de checkout de presença.
+          </p>
+        </div>
+
+        <div class="split">
+          <form class="form" action="#" method="post">
+            <label class="form__field">
+              <span>Nome</span>
+              <input type="text" name="nome" placeholder="Seu nome completo" required />
+            </label>
+            <label class="form__field">
+              <span>E-mail</span>
+              <input type="email" name="email" placeholder="seu@email.com" required />
+            </label>
+            <label class="form__field">
+              <span>Assunto</span>
+              <input type="text" name="assunto" placeholder="Sobre o que quer falar?" required />
+            </label>
+            <label class="form__field">
+              <span>Mensagem</span>
+              <textarea name="mensagem" rows="4" placeholder="Conte mais detalhes" required></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">Enviar mensagem</button>
+          </form>
+
+          <div class="contact-card">
+            <div class="contact-card__item">
+              <span class="contact-card__label">Email</span>
+              <a href="mailto:raissa.b.bayer@gmail.com">raissa.b.bayer@gmail.com</a>
+            </div>
+            <div class="contact-card__item">
+              <span class="contact-card__label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/raissa-bayer" target="_blank" rel="noopener">linkedin.com/in/raissa-bayer</a>
+            </div>
+            <div class="contact-card__item">
+              <span class="contact-card__label">Instagram</span>
+              <a href="https://www.instagram.com/raissa.bayer" target="_blank" rel="noopener">@raissa.bayer</a>
+            </div>
+            <div class="contact-card__item">
+              <span class="contact-card__label">GitHub</span>
+              <a href="https://github.com/RaissaBayer" target="_blank" rel="noopener">github.com/RaissaBayer</a>
+            </div>
+          </div>
+        </div>
       </section>
-    </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div>
+          <div class="brand__name">Raissa Batista Bayer</div>
+          <p>Formulário pronto para novas conversas.</p>
+        </div>
+        <a class="footer__link" href="ajuda.html">Heurísticas e diretrizes</a>
+      </div>
+    </footer>
   </body>
 </html>
